@@ -1,0 +1,49 @@
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.1);
+            background-color: #ff3d3d;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #fff;
+            text-align: center;
+            animation: fadeIn 1.5s ease forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
